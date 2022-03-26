@@ -6,7 +6,7 @@
 - Matrícula: 19.1.8068
 - Curso: SI
 - Semestre/Ano correntes: 2021/2
-- Link para o seu GitHub: (https://github.com/maria-vitoriaa)
+- Link para o seu GitHub: [https://github.com/maria-vitoriaa](https://github.com/maria-vitoriaa)
 
 ## [Projeto final:](./Projeto/README.md)
 
