@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Pessoas</title>
+</head>
+
+<body>
+    <div>
+        <header>
+            <div>
+                <ul>
+                    <li>
+                        <a href="home.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="estados.html">Estados</a>
+                    </li>
+                    <li>
+                        <a href="cidades.html">Cidades</a>
+                    </li>
+                    <li>
+                        <a href="produtos.html">Produtos</a>
+                    </li>
+                    <li>
+                        <a href="pessoas.html">Pessoas</a>
+                    </li>
+                    <li>
+                        <a href="compras.html">Compras</a>
+                    </li>
+                    <li>
+                        <a href="perfil.html">Perfil</a>
+                    </li>
+                    <li>
+                        <a href="sair.html">Sair</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+    </div>
+    <div>
+        <h1>Dados do cadastro</h1>
+        <form method="get" action="relatorio.html">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome">
+            </div><br>
+            <div>
+                <label for="endereco">Endereço:</label>
+                <input type="text" name="endereco" id="endereco">
+            </div><br>
+            <div>
+                <label for="cpf">CPF:</label>
+                <input type="text" name="cpf" id="cpf">
+            </div><br>
+            <div>
+                <label for="telefone">Telefone para contato:</label>
+                <input type="text" name="telefone" id="telefone">
+            </div><br>
+            <div>
+                <label>Gênero:</label>
+                <div>
+                    <input type="radio" name="genero" id="feminino" value="F">
+                    <label for="feminino">Feminino</label>
+                </div>
+                <div>
+                    <input type="radio" name="genero" id="masculino" value="M">
+                    <label for="masculino">Masculino</label>
+                </div>
+                <div>
+                    <input type="radio" name="genero" id="semresposta" value="SR">
+                    <label for="semresposta">Prefiro não responder</label>
+                </div>
+            </div><br>
+            <input type="submit" value="Cadastrar">
+            <input type="reset" value="Limpar">
+        </form>
+    </div>
+    <br>
+    <a href="pessoas.html">Voltar</a>
+</body>
+</html>
