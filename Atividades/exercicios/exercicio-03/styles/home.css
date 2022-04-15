@@ -1,0 +1,12 @@
+.home{
+  font-size: 20pt;
+  color:#FFFF;
+  padding: 80px;
+}
+
+body.background_home{
+  background-image: url(../images/home.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+

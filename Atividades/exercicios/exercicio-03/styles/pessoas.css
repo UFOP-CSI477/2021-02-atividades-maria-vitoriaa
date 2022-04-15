@@ -1,0 +1,78 @@
+/*Pessoas*/
+.pessoas{
+    font-size: 20pt;
+    color: #FFFF;
+    padding: 80px;
+}
+
+.linkPessoas a{
+    display: inline-block;
+    margin-left: 80px;
+    color: #FFFF;
+}
+
+body.background_pessoas{
+background-image: url(../images/pessoas.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*Relatório*/
+.h1{
+    font-size: 14pt;
+    color: #FFFF;
+    padding: 80px;
+    padding-top: 10px;
+}
+
+table{
+    width: 98%;
+    margin-left: 10px;
+}
+
+table, th, td{
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+}
+
+th{
+    font-size: 14pt;
+    font-family: Tahoma;
+    font-style: italic;
+    color: white;
+}
+
+td{
+    font-size: 10pt;
+    font-family: Tahoma;
+    color: white;
+}
+
+thead tr:hover{
+    background-color: #008080;
+}
+
+tbody tr:hover{
+    background-color: #5F9EA0;
+}
+
+/*Cadastro*/
+label{
+    font-weight: bold;
+    color: white;
+    margin-left: 10px;
+}
+
+input[type="text"]{
+    width: 25%;
+    padding: 2px;
+    background-color: #c6c6c6;
+    border: 1px solid green;
+    border-radius: 8px;
+}
+
+input{
+    margin-left: 10px;
+    padding: 7px;
+}
