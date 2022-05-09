@@ -1,0 +1,24 @@
+body {
+    background-image: url(./maps.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+label {
+    font-weight: bold;
+    color: #000;
+    margin-left: 10px;
+}
+
+h3 {
+    font-weight: bold;
+    color: #000;
+    margin-left: 10px;
+    font-size: 18pt;
+}
+
+input {
+    color: #FFF;
+    margin-left: 10px;
+    background-color: midnightblue;
+}

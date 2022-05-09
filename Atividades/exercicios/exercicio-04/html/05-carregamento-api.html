@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/api.css">
+    <title>API IBGE</title>
+</head>
+
+<body onload="carregarEstados()">
+    <form action="#">
+        <h3>Encontre sua localização:</h3>
+        <input type="button" value="Carregar informações" onclick="carregarEstados()"><br><br>
+        <label>Estado:</label>
+        <select name="estados" id="estados" onchange="carregarCidades()">
+            <option value="">Selecione:</option>
+        </select><br><br>
+        <label>Cidade:</label>
+        <select name="cidades" id="cidades">
+            <option value="">Selecione:</option>
+        </select>
+
+    </form>
+
+
+    <script src="../js/api.js"></script>
+</body>
+
+</html>
