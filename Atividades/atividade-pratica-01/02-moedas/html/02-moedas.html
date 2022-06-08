@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/conversor.css">
+    <title>Conversor de Moedas</title>
+
+</head>
+
+<body class="background" onload="carregarMoedas()">
+    <nav class="navbar navbar-expand-lg" style="background-color: transparent">
+        <div class="logo">
+            <img class="position-absolute top-0 start-50 translate-middle-x" src="../css/mudanca.png">
+        </div>
+    </nav>
+    <div class="row align-items-center">
+        <div class="container">
+            <div>
+                <label for="valor" class="mt-3">Valor</label>
+                <div class="input-group mb-2">
+                    <span class="input-group-text" id="basic-addon1">R$</span>
+                    <input type="number" name="valor" id="valor" class="form-control" placeholder="Insira o valor">
+                </div>
+            </div>
+            <label for="de">Converter de:</label>
+            <div class="input-group-text">
+                <select name="de" class="form-select form-select-sm" id="de">
+                    <option value="selecione">Selecione</option>
+                </select>
+            </div>
+            <label for="para">Para:</label>
+            <div class="input-group-text">
+                <select name="para" class="form-select form-select-sm" id="para">
+                    <option value="selecione">Selecione</option>
+                </select>
+            </div><br>
+            <div class="row justify-content-around">
+                <div class="col-4">
+                    <button id="button" onclick=""> Converter</button><br>
+                </div>
+                <div class="col-4">
+                    <button class="buttonReset" onclick="limparCampos()"> Limpar </button>
+                </div>
+            </div>
+            <label for="resultado" class="mt-3">Resultado</label>
+            <div class="input-group mb-2">
+                <span class="input-group-text" id="basic-addon1"></span>
+                <input type="number" name="resultado" id="resultado" class="form-control">
+            </div><br>
+            </form><br>
+        </div>
+    </div>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top fixed-bottom">
+        <div class="col-md-4 d-flex align-items-center">
+            <span id="footer">CSI606 - Sistemas Web I | Maria Vitória Silva Magalhães</span>
+        </div>
+    </footer>
+    <script src="../js/conversor.js"></script>
+</body>
+
+</html>
