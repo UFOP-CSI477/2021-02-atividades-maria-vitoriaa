@@ -1,0 +1,34 @@
+/*Index*/
+#box-login {
+    background: rgba(41, 114, 138, 0.745);
+    padding: 30px;
+    margin-top: 150px;
+    border-radius: 10px;
+}
+
+#text-span {
+    text-align: right;
+    margin-top: -40px;
+}
+
+#text-a {
+    text-align: center;
+}
+
+body.background {
+    background-color: rgba(48, 125, 151, 0.59);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer img {
+    width: 50%;
+    position: absolute;
+    width: 240px;
+    height: 280px;
+    float: right;
+    margin-bottom: 0;
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+}

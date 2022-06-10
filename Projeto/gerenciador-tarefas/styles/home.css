@@ -1,0 +1,132 @@
+.nav {
+    overflow: hidden;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-left: 300px;
+}
+
+.nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.h4 {
+    overflow: hidden;
+    position: fixed;
+    margin-top: 40px;
+    margin-left: 25px;
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    margin-top: 110px;
+}
+
+.child {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    margin: -25px 0 0 -25px;
+}
+
+h3 {
+    text-align: center;
+}
+
+.container-search button,
+.container-search a {
+    background-color: #016786;
+    border: none;
+    padding: 7px 24px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.container-search button {
+    position: fixed;
+}
+
+.container-search a {
+    position: fixed;
+    margin-left: 130px;
+}
+
+.container-search {
+    margin-left: 20px;
+}
+
+.container-search button:hover,
+.container-search a:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.table {
+    background-color: rgba(41, 114, 138, 0.148);
+    border: 2px solid;
+    border: white;
+    border-style: double;
+}
+
+.header {
+    background-color: rgba(41, 114, 138, 0.667);
+    color: white;
+    text-align: center;
+}
+
+.bi-pencil-square,
+.bi-trash,
+.bi-search {
+
+    color: rgba(31, 84, 102, 0.968);
+    ;
+}
+
+/* From uiverse.io by @alexmaracinaru */
+.cta {
+    margin-top: 20px;
+    border: none;
+    background: none;
+}
+
+.cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 12px;
+    padding-right: 15px;
+    text-transform: uppercase;
+}
+
+.hover-underline-animation {
+    position: relative;
+    color: #ffff;
+    padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    background-color: #155555;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}

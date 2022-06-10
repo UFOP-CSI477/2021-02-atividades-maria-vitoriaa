@@ -1,6 +1,6 @@
 # **CSI606-2021-02 - Remoto - Trabalho Final - Resultados**
 
-## *Aluna(o): Princesa Leia (Luke Skywalker)*
+## *Aluna(o): Maria Vitória Silva Magalhães*
 
 --------------
 
@@ -8,22 +8,30 @@
 
 ### Resumo
 
-  (Apresentar um breve resumo sobre o seu trabalho, indicando o contexto e as principais funcionalidades.)
+  O To-Do List - Gerenciador de Tarefas tem como objetivo facilitar a organização das tarefas diárias, bem como a otimização de tempo de seus usários. A aplicação permite que o usuário cadastre, edite, exclua e visualize suas tarefas, sendo possível ainda classificar as tarefas de acordo com a categoria.
 
 ### 1. Funcionalidades implementadas
-<!-- Descrever as funcionalidades que eram previstas e foram implementas. -->
+  Todas as funcionalidades previstas foram implementadas:
+
+  - Cadastrar usuário;
+  - Cadastrar tarefas;
+  - Excluir tarefas;
+  - Editar tarefas;
+  - Visualizar tarefas cadastradas;
+  - Redirecionamento entre páginas através da navbar.
   
 ### 2. Funcionalidades previstas e não implementadas
-<!-- Descrever as funcionalidades que eram previstas e não foram implementas, apresentando uma breve justificativa do porquê elas não foram incluídas -->
+ N/A
 
 ### 3. Outras funcionalidades implementadas
-<!-- Descrever as funcionalidades implementas além daquelas que foram previstas, caso se aplique.  -->
+ Além das funcionalidades previstas, foi possível cadastrar um usuário administrador do sistema. Este usuário não possui autonomia para excluir e/ou editar as tarefas de outros usuários, apenas visualizá-las.
 
 ### 4. Principais desafios e dificuldades
-<!-- Descrever os principais desafios encontrados no desenvolvimento do trabalho, quais foram as dificuldades e como elas foram superadas e resolvidas. -->
+ As principais dificuldades surgiram no início da implementação com relação à conexão com o banco de dados. As informações enviadas ao banco não eram cadastradas e resultava em um erro. O problema foi solucionado editando o arquivo de configuração do banco.
 
 ### 5. Instruções para instalação e execução
-<!-- Descrever o que deve ser feito para instalar (ou baixar) a aplicação, o que precisa ser configurando (parâmetros, banco de dados e afins) e como executá-la. -->
+Para executar a aplicação, é necessário utilizar um servidor web, como o Apache, por exemplo. 
+Durante o desenvolvimento do projeto, o Xampp foi utilizado pois inclui o banco de dados MYSQL e o Apache com suporte a linguagem PHP.
 
 ### 6. Referências
-<!-- Referências podem ser incluídas, caso necessário. Utilize o padrão ABNT. -->
+ Sem referências.
