@@ -11,5 +11,5 @@ $sql = "DELETE FROM tb_tarefas WHERE cod = $cod";
 $resultado = mysqli_query($conn, $sql);
 
 if ($resultado == true) {
-    header("location:./home.php");
+    header("location:../home.php");
 }

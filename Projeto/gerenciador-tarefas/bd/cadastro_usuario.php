@@ -15,5 +15,5 @@ $sql = "INSERT INTO
 $resultado = mysqli_query($conn, $sql);
 
 if ($resultado == true) {
-    header("location:./login.php");
+    header("location:../login.php");
 }

@@ -26,5 +26,5 @@ $sql = "UPDATE tb_tarefas SET
 $resultado = mysqli_query($conn, $sql);
 
 if ($resultado == true) {
-    header("location:./home.php");
+    header("location:../home.php");
 }
