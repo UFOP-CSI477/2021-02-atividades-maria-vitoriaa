@@ -10,4 +10,4 @@
 
 ## [Projeto final:](./Projeto/README.md)
 
-Apresente uma breve descrição do seu projeto.
+ O projeto final consiste no desenvolvimento da aplicação "To-Do List - Gerenciador de Tarefas" que tem como objetivo facilitar a organização das tarefas diárias, bem como a otimização de tempo de seus usários. A aplicação permite que o usuário cadastre, edite, exclua e visualize suas tarefas, sendo possível ainda classificar as tarefas de acordo com a categoria.
