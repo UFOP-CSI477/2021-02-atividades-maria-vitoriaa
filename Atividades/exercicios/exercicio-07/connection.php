@@ -5,6 +5,6 @@ $dbuser = "";
 $dbpassword = "";
 $dbhost = "";
 
-$strConnection = "sqlite" . $dbfile;
+$strConnection = "sqlite:" . $dbfile;
 
 $connection = new PDO($strConnection, $dbuser, $dbpassword);
