@@ -10,11 +10,17 @@ use App\Models\Produto;
  */
 class ProdutoFactory extends Factory
 {
-    /**
-     * Define the model's default state.
+      /**
+     * The name of the factory's corresponding model.
      *
+     * @var string
      */
     protected $model = Produto::class;
+    /**
+  * Define the model's default state.
+  *
+  * @return array<string, mixed>
+  */
 
     public function definition()
     {
