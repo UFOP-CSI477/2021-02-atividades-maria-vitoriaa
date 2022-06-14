@@ -5,10 +5,17 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Produto extends Model
+class Person extends Model
 {
-    use HasFactory;//traits
-    protected $fillable = ['name', 'um'];
+    use HasFactory;
+
+    protected $fillable = ['name', 'cidade_id'];
+
+    public function cidade()
+    {
+        return $this->belongsTo(Cidade::class);
+    }
+
     public function compras()
     {
         return $this->hasMany(Compra::class);

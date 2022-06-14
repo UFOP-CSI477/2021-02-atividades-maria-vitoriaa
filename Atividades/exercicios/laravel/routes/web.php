@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProdutoController;
+use App\Http\Controllers\EstadoController;
+use App\Http\Controllers\CidadeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,7 +21,8 @@ Route::get('/', function () {
 })->name('home');
 
 Route::resource('/products', ProdutoController::class);
-
+Route::resource('/estados', EstadoController::class);
+Route::resource('/cidade', CidadeController::class);
 /*Route::get('/produtos/{id}', function ($id) {
     $produtos = Produto::all();
     $product = $produtos->where('id', $id);

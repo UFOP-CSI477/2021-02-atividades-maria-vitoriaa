@@ -11,10 +11,12 @@
     <div class="container">
         <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
             <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-                <i class="bi bi-bag-heart" style="font-size: 3rem; color: #EB5353;"></i>
+                <i class="bi bi-bag-heart" style="color: #EB5353;"></i>
             </a>
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
                 <li><a href="{{ route('home') }}" class="nav-link px-2 link-secondary">Home</a></li>
+                <li><a href="{{ route('estados.index') }}" class="nav-link px-2 link-dark">Estados</a></li>
+                <li><a href="{{ route('cidades.index') }}" class="nav-link px-2 link-dark">Cidades</a></li>
                 <li><a href="{{ route('products.index') }}" class="nav-link px-2 link-dark">Produtos</a></li>
             </ul>
 
