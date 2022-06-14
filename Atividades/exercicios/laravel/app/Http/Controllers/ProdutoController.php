@@ -26,6 +26,7 @@ class ProdutoController extends Controller
     public function create()
     {
         //
+        return view('produtos.create');
     }
 
     /**
@@ -37,6 +38,12 @@ class ProdutoController extends Controller
     public function store(Request $request)
     {
         //
+        if (Produto::create($request->all())) {
+            return redirect()->route('produtos.index')->with('sucess', 'Produto cadastrado!');
+        } else {
+            session()->flash('error-message', 'Falha ao cadastrar produto!');
+            return back()->withInput();
+        }
     }
 
     /**
@@ -48,6 +55,7 @@ class ProdutoController extends Controller
     public function show(Produto $produtos)
     {
         //
+        return view('produtos.show', ['produto' => $produtos]);
     }
 
     /**
@@ -59,6 +67,7 @@ class ProdutoController extends Controller
     public function edit(Produto $produtos)
     {
         //
+        return view('produtos.edit', ['produto' => $produtos]);
     }
 
     /**
@@ -71,6 +80,13 @@ class ProdutoController extends Controller
     public function update(Request $request, Produto $produtos)
     {
         //
+        $produtos->fill($request->all());
+        if ($produtos->save()) {
+            return redirect()->route('produtos.index')->with('success', 'Produto alterado!');
+        } else {
+            session()->flash('error-message', 'Falha ao alterar produto!');
+            return back()->withInput();
+        }
     }
 
     /**
@@ -82,5 +98,11 @@ class ProdutoController extends Controller
     public function destroy(Produto $produtos)
     {
         //
+        if ($produtos->delete()) {
+            return redirect()->route('produtos.index')->with('success', 'Produto excluído!');
+        } else {
+            session()->flash('error-message', 'Falha ao excluir produto!');
+            return back()->withInput();
+        }
     }
 }
