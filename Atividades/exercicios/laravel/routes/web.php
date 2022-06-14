@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Models\Produto;
+use App\Http\Controllers\ProdutoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,20 +15,15 @@ use App\Models\Produto;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('principal');
+})->name('principal');
 
-Route::get('/produtos', function () {
-    $produtos = Produto::all();
-    return view('produtos', [
-        'produtos' => $produtos
-    ]);
-});
+Route::resource('/products', ProdutoController::class);
 
-Route::get('/produtos/{id}', function ($id) {
+/*Route::get('/produtos/{id}', function ($id) {
     $produtos = Produto::all();
     $product = $produtos->where('id', $id);
     return view('produtos', [
         'produtos' => $product
     ]);
-});
+});*/
